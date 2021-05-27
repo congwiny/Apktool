@@ -54,6 +54,6 @@ public class AndResGuardTest extends BaseTest {
         apkDecoder.decode();
 
         File aPng =  new File(sTestOrigDir,"res/mipmap-hdpi-v4/a.png");
-        assertTrue(aPng.isFile());
+        assertFalse(aPng.isFile());
     }
 }

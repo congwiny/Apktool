@@ -37,9 +37,9 @@ public class ResFileValue extends ResIntBasedValue {
         if (mPath.startsWith("res/")) {
             return mPath.substring(4);
         }
-        if (mPath.startsWith("r/") || mPath.startsWith("R/")) {
-            return mPath.substring(2);
-        }
+//        if (mPath.startsWith("r/") || mPath.startsWith("R/")) {
+//            return mPath.substring(2);
+//        }
         throw new AndrolibException("File path does not start with \"res/\" or \"r/\": " + mPath);
     }
 

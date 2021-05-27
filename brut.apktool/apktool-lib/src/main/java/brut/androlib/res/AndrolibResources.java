@@ -239,12 +239,12 @@ final public class AndrolibResources {
             if (inApk.containsDir("res")) {
                 in = inApk.getDir("res");
             }
-            if (in == null && inApk.containsDir("r")) {
-                in = inApk.getDir("r");
-            }
-            if (in == null && inApk.containsDir("R")) {
-                in = inApk.getDir("R");
-            }
+//            if (in == null && inApk.containsDir("r")) {
+//                in = inApk.getDir("r");
+//            }
+//            if (in == null && inApk.containsDir("R")) {
+//                in = inApk.getDir("R");
+//            }
         } catch (DirectoryException ex) {
             throw new AndrolibException(ex);
         }
